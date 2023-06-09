@@ -50,12 +50,57 @@ print("have_car and have_money :", have_car and have_money)
 have_car = False
 have_money = True
 print("have_car and have_money :", have_car and have_money)
+have_car = True
+have_money = False
+print("have_car and have_money :", have_car and have_money)
+have_car = False
+have_money = False
+print("have_car and have_money :", have_car and have_money)
+
+print(have_car & have_money) # 되긴하지만 권장하지 않음
+
+# 또는(or) 연산
+hungry = True
+study = True
+print("hungry or study :", hungry or study)
+hungry = False
+study = True
+print("hungry or study :", hungry or study)
+hungry = True
+study = False
+print("hungry or study :", hungry or study)
+hungry = False
+study = False
+print("hungry or study :", hungry or study)
+
+print("hungry | study :", hungry | study)
+
+
+# not (논리값 -> bool) True -> False, False -> True
+sleepy = True
+print("sleepy", sleepy)
+print("not sleepy", not sleepy)
+# ! 은 없다.
+# and, or, not -> not (1), and (2), or (3) <-- 우선 순위
+print("not True and False or not Flase", not True and False or not False)
+
+# 논리 연산자 + 비교 연산자 (무조건 비교 연산자가 먼저임)
+# 비교 연산자를 통해서 값을 비교하고 이것을 통해 True 또는 False 결과값(Bool 같이 나옴)
+# 산술 -> 비교 -> 논리 연산자 순. (그래도 괄호와 변수로 표한된 건 먼저 처리가 된 상태임.)
+print("10 == 10 and 10 !=5", 10 == 10 and 10 != 5) # True
+print("(10 == 10) and (10 != 5)", (10 == 10) and (10 != 5)) # True
+print("10 > 5 or 10 <3", 10 > 5 or 10 < 3) # True
+print("not 7 + 3 > 5", not 7 + 3 > 5) # False
+
+# 정수, 실수, 문자열을 불(참,거짓)으로 만들기 /판별
+'''
+정수, 실수, 문자열 -> 불(bool) => bool(1)
+'''
+print('bool(1)', bool(1)) # True
+print('bool(0)', bool(0)) # False
+print("bool(-1)", bool(-1)) # True
+print("bool('아무거나')", bool('아무거나')) # True
+print("bool('')", bool('')) # False 빈 문자열만 False
 
 
 
-
-
-
-
-
-#

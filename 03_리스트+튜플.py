@@ -6,6 +6,8 @@
 * 변수에 값을 저장할 때 [](대괄호)로 묶어주면 리스트가 됨.
 * 리스트 = [값1, 값2, ... ]
 '''
+#from builtins import tuple
+
 fruits = ['apple', 'banana', 'cherry']
 print(fruits)
 numbers = [10, 40, 27]
@@ -100,13 +102,17 @@ a, b, c = y
 print(a, b, c)
 print(l)
 
-
-
 t = (1, 2, 3)
 a, b, c = t
+print(t)
 
+#
+s = [1, 2, 3, 4, 10, 11, 12, 13, 14]
+a, b, c, d, e, f, g, h, i = s
+print("서로 대입하는 수가 다를 경우:", a, b, c, d)
 
-
+l, m, n = 1, 2, 3
+print("오류가 있음", l, m, n)
 
 
 

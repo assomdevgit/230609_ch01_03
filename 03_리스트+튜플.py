@@ -48,6 +48,67 @@ print(list(r2)) # 100씩 증가 range(100,1000,100) --> list(range(100,1000,100)
 r3 = range(1000, 100, -100)
 print(list(r3))
 
+# 튜플(tuple)
+'''
+* 리스트처럼 요소(원소, element)
+* 튜플은 요소를 수정할 수 없음 (read only)
+* 리스트가 []라면, 튜플은 ()입니다.
+* 튜플 = (값1, 값2, 값3 ...)
+* 튜플 = 값1, 값2, 값3 ...
+'''
+# 숫자가 5개 들어있는 튜플
+a1 = (23, 38, 12, 11, 7)
+print(a1)
+a2 = 23, 38, 12, 11, 7
+print(a2)
+a3 = '파이썬', 2, 3, 5
+print(a3) # 튜플도 리스트처럼 자료형의 혼합이 가능
+
+# range를 사용해서 튜플 만들기
+# list(...) => range => list
+# tuple(...) => range => tuple
+print(tuple(range(10)))
+
+# tuple을 list로 변환하고, list를 tuple로 변환하고 싶으면?
+a = list(range(10))
+print(a)
+b = tuple(a)
+print(b)
+c = tuple(range(5, 25, 5))
+print(c)
+d = list(c)
+print(d)
+
+# 리스트와 튜플로 변수 만들기
+'''
+* 리스트 또는 튜플을 사용하면 변수 여러 개를 한 번에 만들 수 있음
+* 이 때 (만들려는) 변수와 개수와 리스트(튜플)의 요소 개수는 같아야 함.
+'''
+l = [1, 2, 3]
+a, b, c = l
+print("a:", a, "b:", b, "c:", c)
+t = ("dog", "cat", "tiger")
+d, e, f = t
+print("d:", d, "e:", e, "f:", f)
+
+a, b, c = [1, 2, 3] # 리스트를 분해해서 각각의 변수에 집어 넣는 것? : 리스트 언팩킹
+print("a:", a, "b:", b, "c:", c)
+
+y = 10, 100, 1000 # 튜플 팩킹
+l = [10, 100, 1000] # 리스트 팩킹
+a, b, c = y
+print(a, b, c)
+print(l)
+
+
+
+t = (1, 2, 3)
+a, b, c = t
+
+
+
+
+
 
 
 
